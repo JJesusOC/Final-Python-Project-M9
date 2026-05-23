@@ -212,6 +212,7 @@ def plot_shot_map(shots):
     plt.xlabel("Pitch X")
     plt.ylabel("Pitch Y")
     plt.tight_layout()
+    plt.savefig("shot_map.png")  #For README purposes
     plt.show()
 
 # Bar chart showing the number of goals scored from each shot zone.
@@ -229,6 +230,7 @@ def plot_goals_by_zone(shots):
     plt.title("Goals by Shot Zone")
     plt.ylabel("Goals")
     plt.tight_layout()
+    plt.savefig("goals_by_zone.png")  #For README purposes
     plt.show()
 
 
@@ -423,10 +425,7 @@ if __name__ == "__main__":
             sample_shots.append(Shot(x=x, y=y, is_goal=is_goal))
 
         plot_shot_map(sample_shots)
-        plt.savefig("shot_map.png") # For README purposes
-
         plot_goals_by_zone(sample_shots)
-        plt.savefig("goals_by_zone.png") # For README purposes
 
         sys.argv = [sys.argv[0]]
         unittest.main(verbosity=2)
