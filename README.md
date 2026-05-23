@@ -62,4 +62,4 @@ Limitations:
 
 Author:
 JJesus E. Ochoa Chavez
-Course Final Poject - Python, Testing, and Debugging
+Python Course Final Poject - Testing and Debugging
