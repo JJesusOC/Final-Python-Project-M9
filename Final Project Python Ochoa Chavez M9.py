@@ -423,7 +423,10 @@ if __name__ == "__main__":
             sample_shots.append(Shot(x=x, y=y, is_goal=is_goal))
 
         plot_shot_map(sample_shots)
+        plt.savefig("shot_map.png") # For README purposes
+
         plot_goals_by_zone(sample_shots)
+        plt.savefig("goals_by_zone.png") # For README purposes
 
         sys.argv = [sys.argv[0]]
         unittest.main(verbosity=2)
